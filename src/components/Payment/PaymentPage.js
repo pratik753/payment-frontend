@@ -29,12 +29,15 @@ const PaymentPage = ({ userDetail, setUserDetail }) => {
       return;
     }
 
-    const data = await fetch("http://localhost:4000/payment/razorpay", {
-      method: "POST",
-      // body: userDetail,
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userDetail }),
-    }).then((t) => t.json());
+    const data = await fetch(
+      "https://payment-backend.onrender.com/payment/razorpay",
+      {
+        method: "POST",
+        // body: userDetail,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userDetail }),
+      }
+    ).then((t) => t.json());
 
     console.log(data);
 

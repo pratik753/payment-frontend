@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://payment-backend.onrender.com/",
-  // baseURL: "http://localhost:4000",
+  // baseURL: "https://payment-backend.onrender.com/",
+  baseURL: "http://localhost:4000",
 });
 // API.interceptors.request.use((req) => {
 //   if (localStorage.getItem("profile")) {

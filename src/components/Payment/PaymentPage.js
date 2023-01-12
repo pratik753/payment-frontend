@@ -30,7 +30,8 @@ const PaymentPage = ({ userDetail, setUserDetail }) => {
     }
 
     const data = await fetch(
-      "https://payment-backend.onrender.com/payment/razorpay",
+      // "https://payment-backend.onrender.com/payment/razorpay",    {
+      "http://localhost:4000/payment/razorpay",
       {
         method: "POST",
         // body: userDetail,
